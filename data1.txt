@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="./css/default.css" rel="stylesheet"/>
+  <link href="./css/default_layout_left_menu_available.css" rel="stylesheet"/>
+  <title>
+   統計表(中央値順)    ErogameScape-エロゲー批評空間-
+  </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="./js/tooltip.js" type="text/javascript">
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N807LY4BBM">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N807LY4BBM');
+  </script>
+ </head>
+ <body>
+  <!-- container　ここから -->
+  <div id="container">
+   <!-- heder　ここから -->
+   <div id="header">
+    <div id="title">
+     <h1>
+      <a href="./">
+       ErogameScape -エロゲー批評空間-
+      </a>
+     </h1>
+    </div>
+   </div>
+   <!-- heder　ここまで -->
+   <!-- wrapper　ここから -->
+   <div id="wrapper">
+    <!-- main　ここから -->
+    <div id="main">
+     <div id="statistics_table">
+      <div id="statistics_title" style="margin-bottom: 10px;">
+       <h2>
+        統計表(中央値順)
+       </h2>
+      </div>
+      <div id="refine_form">
+       <h3>
+        検索条件変更
+       </h3>
+       <form action="/~ap2/ero/toukei_kaiseki/toukei_median.php" method="get">
+        データ数が
+        <select name="count">
+         <option value="5">
+          5
+         </option>
+         <option value="10">
+          10
+         </option>
+         <option value="20">
+          20
+         </option>
+         <option value="50">
+          50
+         </option>
+         <option selected="selected" value="100">
+          100
+         </option>
+         <option value="200">
+          200
+         </option>
+         <option value="500">
+          500
+         </option>
+        </select>
+        で、かつ
+        <select name="year">
+         <option name="2024">
+          2024
+         </option>
+         <option name="2023">
+          2023
+         </option>
+         <option name="2022">
+          2022
+         </option>
+         <option name="2021">
+          2021
+         </option>
+         <option name="2020">
+          2020
+         </option>
+         <option name="2019">
+          2019
+         </option>
+         <option name="2018">
+          2018
+         </option>
+         <option name="2017">
+          2017
+         </option>
+         <option name="2016">
+          2016
+         </option>
+         <option name="2015">
+          2015
+         </option>
+         <option name="2014">
+          2014
+         </option>
+         <option name="2013">
+          2013
+         </option>
+         <option name="2012">
+          2012
+         </option>
+         <option name="2011">
+          2011
+         </option>
+         <option name="2010">
+          2010
+         </option>
+         <option name="2009">
+          2009
+         </option>
+         <option name="2008">
+          2008
+         </option>
+         <option name="2007">
+          2007
+         </option>
+         <option name="2006">
+          2006
+         </option>
+         <option name="2005">
+          2005
+         </option>
+         <option name="2004">
+          2004
+         </option>
+         <option name="2003">
+          2003
+         </option>
+         <option name="2002">
+          2002
+         </option>
+         <option name="2001">
+          2001
+         </option>
+         <option name="2000">
+          2000
+         </option>
+         <option name="1900" selected="selected">
+          1900
+         </option>
+        </select>
+        年以降に発売されたゲームで
+        <input type="submit" value="絞り込む"/>
+       </form>
+      </div>
+      <div class="font_size_15pt" id="statistics_table_main">
+       <h3>
+        統計表
+       </h3>
+       <table>
+        <tr>
+         <th>
+          ゲーム名
+         </th>
+         <th>
+          ブランド名
+         </th>
+         <th>
+          中央値
+         </th>
+         <th>
+          平均値
+         </th>
+         <th>
+          標準偏差
+         </th>
+         <th>
+          データ数
+         </th>
+        </tr>
+       </table>
+      </div>
+      <div id="statistics_table_nav_footer" style="margin-bottom: 15px;">
+       <a href="/~ap2/ero/toukei_kaiseki/toukei_median.php?offset=2600&amp;year=1900&amp;count=100#statistics_table_main">
+        前の100件を見る
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- main　ここまで -->
+    <!-- left_menu　ここから -->
+    <div id="left_menu">
+     <div id="login">
+      <h2>
+       ログイン
+      </h2>
+      <ul>
+       <li>
+        <form action="login.php" id="login_form" method="post" name="login_form">
+         <input name="sorce_url" type="hidden" value="/~ap2/ero/toukei_kaiseki/toukei_median.php?offset=2700&amp;count=100&amp;year=1900"/>
+         <a href="javascript:login_form.submit()">
+          ログイン
+         </a>
+        </form>
+       </li>
+       <li>
+        <a href="regForm.php">
+         新規ID取得
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="bottom-margin" id="serch_box">
+      <h2>
+       検索
+      </h2>
+      <form action="kensaku.php" method="get">
+       <p>
+        <!-- 検索種別1 -->
+        <select name="category">
+         <option id="serch_category_game" value="game">
+          ゲーム
+         </option>
+         <option id="serch_category_brand" value="brand">
+          ブランド
+         </option>
+         <option id="serch_category_creater" value="creater">
+          クリエイター
+         </option>
+         <option id="serch_category_music" value="music">
+          音楽
+         </option>
+         <option id="serch_category_musicitem" value="musicitem">
+          音楽関連商品
+         </option>
+         <option id="serch_category_user" value="user">
+          ユーザー
+         </option>
+         <option id="serch_category_pov" value="pov">
+          POV/タグ
+         </option>
+         <option id="serch_category_sql" value="sql">
+          SQL
+         </option>
+         <option id="serch_category_shubetu_detail_name" value="shubetu_detail_name">
+          職種詳細
+         </option>
+         <option id="serch_category_creater_all" value="creater_all">
+          クリエイター(すべて)
+         </option>
+         <option id="serch_category_character" value="character">
+          キャラクター
+         </option>
+        </select>
+        <!-- 検索種別2 -->
+        <select name="word_category">
+         <option id="serch_word_name" value="name">
+          名前
+         </option>
+         <option id="serch_word_furigana" value="furigana">
+          フリガナ
+         </option>
+        </select>
+        <input id="serch_word" name="word" size="15" style="width: 160px;" type="text" value=""/>
+        <input type="submit" value="検索"/>
+        <input name="mode" type="hidden" value="normal"/>
+       </p>
+      </form>
+     </div>
+     <div id="monthly_statistics_tables">
+      <h2>
+       統計表
+      </h2>
+      <ul>
+       <li>
+        <a href="index_toukei.php">
+         統計表目次
+        </a>
+       </li>
+      </ul>
+      <h3>
+       統計表(中央値順)
+      </h3>
+      <ul>
+       <li>
+        <a href="toukei_median.php">
+         すべてのゲーム
+        </a>
+       </li>
+       <li>
+        <a href="toukei_median.php?erogame=t">
+         18禁のみ
+        </a>
+       </li>
+       <li>
+        <a href="toukei_median.php?erogame=f">
+         非18禁のみ
+        </a>
+       </li>
+       <li>
+        <a href="toukei_median.php?coterie=f">
+         商業のみ
+        </a>
+       </li>
+       <li>
+        <a href="toukei_median.php?coterie=t">
+         同人のみ
+        </a>
+       </li>
+       <li>
+        <a href="toukei_median.php?erogame=t&amp;coterie=t">
+         18禁の同人のみ
+        </a>
+       </li>
+       <li>
+        <a href="toukei_median.php?erogame=f&amp;coterie=t">
+         非18禁の同人のみ
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- left_menu　ここまで -->
+   </div>
+   <!-- wrapper　ここまで -->
+   <!-- right_menu　ここから -->
+   <div id="right_menu">
+    <!-- <h2>右メニュー</h2> -->
+   </div>
+   <!-- right_menu　ここまで -->
+   <!-- footer　ここから -->
+   <div id="footer">
+    <hr/>
+    <!-- generated_date　ここから -->
+    <div id="generated_date">
+     <p>
+      この文書は2024年09月08日 21：46：10に生成されました。
+     </p>
+    </div>
+    <!-- generated_date　ここまで -->
+    <!-- site_infomation　ここから -->
+    <div id="site_infomation">
+     <address>
+      ひろいん
+      <br/>
+      egamescape @ gmail.com
+     </address>
+    </div>
+    <!-- site_infomation　ここまで -->
+   </div>
+   <!-- footer　ここまで -->
+  </div>
+  <!-- container　ここまで -->
+ </body>
+</html>

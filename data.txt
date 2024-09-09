@@ -1,0 +1,2361 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="./css/default.css" rel="stylesheet" />
+  <link href="./css/default_layout_left_menu_available.css" rel="stylesheet" />
+  <title>
+    統計表(中央値順)    ErogameScape-エロゲー批評空間-</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/tooltip.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N807LY4BBM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N807LY4BBM');
+</script></head>
+
+<body>
+
+  <!-- container　ここから -->
+  <div id="container">
+
+    <!-- heder　ここから -->
+    <div id="header">
+
+      <div id="title">
+        <h1><a href="./">ErogameScape -エロゲー批評空間-</a></h1>
+      </div>
+
+    </div>
+    <!-- heder　ここまで -->
+
+    <!-- wrapper　ここから -->
+    <div id="wrapper">
+
+      <!-- main　ここから -->
+      <div id="main">
+
+        <div id="statistics_table">
+          <div id="statistics_title" style="margin-bottom: 10px;">
+            <h2>
+              統計表(中央値順)            </h2>
+          </div>
+
+          <div id="refine_form">
+            <h3>検索条件変更</h3>
+            <form
+              action="/~ap2/ero/toukei_kaiseki/toukei_median.php"
+              method="get">
+              データ数が
+              <select name="count">
+                <option value="5" >5</option>
+                <option value="10" >10</option>
+                <option value="20" >20</option>
+                <option value="50" >50</option>
+                <option value="100"                   selected="selected">100</option>
+                <option value="200" >200</option>
+                <option value="500" >500</option>
+              </select>
+              で、かつ
+              <select name="year">
+                                <option name="2024" >2024                </option>
+                                <option name="2023" >2023                </option>
+                                <option name="2022" >2022                </option>
+                                <option name="2021" >2021                </option>
+                                <option name="2020" >2020                </option>
+                                <option name="2019" >2019                </option>
+                                <option name="2018" >2018                </option>
+                                <option name="2017" >2017                </option>
+                                <option name="2016" >2016                </option>
+                                <option name="2015" >2015                </option>
+                                <option name="2014" >2014                </option>
+                                <option name="2013" >2013                </option>
+                                <option name="2012" >2012                </option>
+                                <option name="2011" >2011                </option>
+                                <option name="2010" >2010                </option>
+                                <option name="2009" >2009                </option>
+                                <option name="2008" >2008                </option>
+                                <option name="2007" >2007                </option>
+                                <option name="2006" >2006                </option>
+                                <option name="2005" >2005                </option>
+                                <option name="2004" >2004                </option>
+                                <option name="2003" >2003                </option>
+                                <option name="2002" >2002                </option>
+                                <option name="2001" >2001                </option>
+                                <option name="2000" >2000                </option>
+                                <option name="1900"                   selected="selected">1900</option>
+              </select>年以降に発売されたゲームで<input type="submit" value="絞り込む">
+                                        </form>
+          </div>
+
+                    <div id="statistics_table_main" class="font_size_15pt">
+            <h3>統計表</h3>
+            <table>
+              <tr>
+                <th>ゲーム名</th>
+                <th>ブランド名</th>
+                <th>中央値</th>
+                <th>平均値</th>
+                <th>標準偏差</th>
+                <th>データ数</th>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=20764#ad" class="tooltip gameid_20764">ランス10</a>                                    <div
+                    class="tooltip tooltip_gameid_20764">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Falice_0046%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/alice_0046/alice_0046ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.alicesoft.com/rance10/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=30">ALICESOFT</a>                </td>
+                <td>
+                  99                </td>
+                <td>
+                  93.01                </td>
+                <td>
+                  14                </td>
+                <td>
+                  982                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=7965#ad" class="tooltip gameid_7965">マブラヴ オルタネイティヴ 全年齢版</a>                                    <div
+                    class="tooltip tooltip_gameid_7965">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145014726" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145014726m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.muvluv.com/product02_alt/index.htm"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1">&acirc;ge(age)</a>                </td>
+                <td>
+                  97                </td>
+                <td>
+                  92.50                </td>
+                <td>
+                  12                </td>
+                <td>
+                  332                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=26206#ad" class="tooltip gameid_26206">WHITE ALBUM2 EXTENDED EDITION</a>                                    <div
+                    class="tooltip tooltip_gameid_26206">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D863apc12197%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/863apc12197/863apc12197ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://leaf.aquaplus.jp/product/wa2cc/product.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=316">Leaf</a>                </td>
+                <td>
+                  95                </td>
+                <td>
+                  92.03                </td>
+                <td>
+                  12                </td>
+                <td>
+                  645                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5737#ad" class="tooltip gameid_5737">Ever17 -the out of infinity- Premium Edition</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_5737">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144001533" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144001533m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=619">KID</a>(解散)                </td>
+                <td>
+                  95                </td>
+                <td>
+                  89.33                </td>
+                <td>
+                  14                </td>
+                <td>
+                  302                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=18010#ad" class="tooltip gameid_18010">WHITE ALBUM2 幸せの向こう側</a><span style="font-weight:bold;">(PS3)</span>                                    <div
+                    class="tooltip tooltip_gameid_18010">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F103300059" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/103300059m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://aquaplus.jp/wa2/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=644">AQUAPLUS</a>                </td>
+                <td>
+                  95                </td>
+                <td>
+                  90.86                </td>
+                <td>
+                  14                </td>
+                <td>
+                  119                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=13255#ad" class="tooltip gameid_13255">WHITE ALBUM2 ～closing chapter～</a>                                    <div
+                    class="tooltip tooltip_gameid_13255">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Faquap_0019%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/aquap_0019/aquap_0019ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://leaf.aquaplus.jp/product/wa2cc/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=316">Leaf</a>                </td>
+                <td>
+                  94                </td>
+                <td>
+                  89.58                </td>
+                <td>
+                  14                </td>
+                <td>
+                  2550                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=4286#ad" class="tooltip gameid_4286">マブラヴ オルタネイティヴ</a>                                    <div
+                    class="tooltip tooltip_gameid_4286">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145014104" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145014104m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.muvluv.com/alternative/index.htm"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1">&acirc;ge(age)</a>                </td>
+                <td>
+                  93                </td>
+                <td>
+                  89.14                </td>
+                <td>
+                  14                </td>
+                <td>
+                  3410                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=2093#ad" class="tooltip gameid_2093">この世の果てで恋を唄う少女YU-NO</a>                                    <div
+                    class="tooltip tooltip_gameid_2093">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Ffanzagames_0054%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/fanzagames_0054/fanzagames_0054ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://fanzagames-digination.com/yu-no/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=70">elf</a>(解散)                </td>
+                <td>
+                  93                </td>
+                <td>
+                  89.58                </td>
+                <td>
+                  13                </td>
+                <td>
+                  1198                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=12797#ad" class="tooltip gameid_12797">Steins;Gate</a><span style="font-weight:bold;">(XB360)</span>                                    <div
+                    class="tooltip tooltip_gameid_12797">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F101000660" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/101000660m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://steinsgate.jp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=2282">MAGES.(5pb.)</a>                </td>
+                <td>
+                  93                </td>
+                <td>
+                  90.48                </td>
+                <td>
+                  11                </td>
+                <td>
+                  497                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=25169#ad" class="tooltip gameid_25169">サクラノ刻 -櫻の森の下を歩む-</a>                                    <div
+                    class="tooltip tooltip_gameid_25169">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fmnphs_0014%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/mnphs_0014/mnphs_0014ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.makura-soft.com/sakuranotoki/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1171">枕</a>                </td>
+                <td>
+                  92                </td>
+                <td>
+                  88.70                </td>
+                <td>
+                  15                </td>
+                <td>
+                  932                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5374#ad" class="tooltip gameid_5374">この世の果てで恋を唄う少女YU-NO</a><span style="font-weight:bold;">(SS)</span>                                    <div
+                    class="tooltip tooltip_gameid_5374">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F141000904" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/141000904m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://yu-no.jp/introduction/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=70">elf</a>(解散)                </td>
+                <td>
+                  92                </td>
+                <td>
+                  89.68                </td>
+                <td>
+                  11                </td>
+                <td>
+                  287                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=26680#ad" class="tooltip gameid_26680">素晴らしき日々 ～不連続存在～ フルボイスHD版</a>                                    <div
+                    class="tooltip tooltip_gameid_26680">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fmnphs_0011%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/mnphs_0011/mnphs_0011ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.keroq.co.jp/suba_fhd/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=108">ケロQ</a>                </td>
+                <td>
+                  91                </td>
+                <td>
+                  89.26                </td>
+                <td>
+                  11                </td>
+                <td>
+                  809                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5432#ad" class="tooltip gameid_5432">Ever17 -the out of infinity-</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_5432">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144000714" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144000714m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=619">KID</a>(解散)                </td>
+                <td>
+                  91                </td>
+                <td>
+                  89.43                </td>
+                <td>
+                  12                </td>
+                <td>
+                  465                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=6198#ad" class="tooltip gameid_6198">CLANNAD</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_6198">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144002977" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144002977m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=622">GungHo Works(Interchannel、NECインターチャネル)</a>(解散)                </td>
+                <td>
+                  91                </td>
+                <td>
+                  87.49                </td>
+                <td>
+                  16                </td>
+                <td>
+                  348                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5875#ad" class="tooltip gameid_5875">家族計画 ～心の絆～</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_5875">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144002461" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144002461m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.gungho.jp/cgame/game/kazoku/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=622">GungHo Works(Interchannel、NECインターチャネル)</a>(解散)                </td>
+                <td>
+                  91                </td>
+                <td>
+                  87.37                </td>
+                <td>
+                  14                </td>
+                <td>
+                  104                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3254#ad" class="tooltip gameid_3254">Fate/stay night</a>                                    <div
+                    class="tooltip tooltip_gameid_3254">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D935apc12965%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/935apc12965/935apc12965ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.typemoon.com/products/fate/index_over18.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=532">TYPE-MOON</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  86.80                </td>
+                <td>
+                  14                </td>
+                <td>
+                  4740                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3007#ad" class="tooltip gameid_3007">CROSS&dagger;CHANNEL</a>                                    <div
+                    class="tooltip tooltip_gameid_3007">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fwill_0247%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/will_0247/will_0247ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.crosschannel-game.com/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=262">FlyingShine</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  85.49                </td>
+                <td>
+                  14                </td>
+                <td>
+                  4452                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3454#ad" class="tooltip gameid_3454">CLANNAD</a>                                    <div
+                    class="tooltip tooltip_gameid_3454">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D1041ksla0030%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/1041ksla0030/1041ksla0030ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/product/clannad/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.15                </td>
+                <td>
+                  15                </td>
+                <td>
+                  3173                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=12591#ad" class="tooltip gameid_12591">素晴らしき日々 ～不連続存在～</a>                                    <div
+                    class="tooltip tooltip_gameid_12591">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fmnphs_0001%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/mnphs_0001/mnphs_0001ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.keroq.co.jp/suba/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=108">ケロQ</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  86.54                </td>
+                <td>
+                  14                </td>
+                <td>
+                  3103                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=8134#ad" class="tooltip gameid_8134">戦国ランス</a>                                    <div
+                    class="tooltip tooltip_gameid_8134">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Falice_0009%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/alice_0009/alice_0009ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.alicesoft.com/rance7/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=30">ALICESOFT</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.20                </td>
+                <td>
+                  10                </td>
+                <td>
+                  2991                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=10469#ad" class="tooltip gameid_10469">装甲悪鬼村正</a>                                    <div
+                    class="tooltip tooltip_gameid_10469">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fhobc_0506%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/hobc_0506/hobc_0506ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.fmd-muramasa.com/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=215">NitroPlus</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.54                </td>
+                <td>
+                  12                </td>
+                <td>
+                  2697                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=9979#ad" class="tooltip gameid_9979">BALDR SKY Dive1 &rdquo;Lost Memory&rdquo;</a>                                    <div
+                    class="tooltip tooltip_gameid_9979">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D587tgi5011%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/587tgi5011/587tgi5011ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.51                </td>
+                <td>
+                  9                </td>
+                <td>
+                  2565                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=6940#ad" class="tooltip gameid_6940">パルフェ ～chocolat second brew Re-order～</a>                                    <div
+                    class="tooltip tooltip_gameid_6940">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145013773" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145013773m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.23                </td>
+                <td>
+                  10                </td>
+                <td>
+                  2428                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=12082#ad" class="tooltip gameid_12082">BALDR SKY Dive2 &rdquo;RECORDARE&rdquo;</a>                                    <div
+                    class="tooltip tooltip_gameid_12082">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D587tgi5012%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/587tgi5012/587tgi5012ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.80                </td>
+                <td>
+                  10                </td>
+                <td>
+                  2244                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=2487#ad" class="tooltip gameid_2487">家族計画 ～絆箱～(家族計画 ～追憶～)</a>                                    <div
+                    class="tooltip tooltip_gameid_2487">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fcdb_0143%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/cdb_0143/cdb_0143ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.do-game.co.jp/r18/products/kazoku/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=190">D.O.(ディーオー)</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.70                </td>
+                <td>
+                  13                </td>
+                <td>
+                  2222                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=4529#ad" class="tooltip gameid_4529">サクラノ詩 -櫻の森の上を舞う-</a>                                    <div
+                    class="tooltip tooltip_gameid_4529">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fmnphs_0002%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/mnphs_0002/mnphs_0002ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.makura-soft.com/sakuranouta/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1171">枕</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.44                </td>
+                <td>
+                  12                </td>
+                <td>
+                  2212                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=13842#ad" class="tooltip gameid_13842">STEINS;GATE</a>                                    <div
+                    class="tooltip tooltip_gameid_13842">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D879apc00017%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/879apc00017/879apc00017ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://steinsgate.jp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=215">NitroPlus</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  89.10                </td>
+                <td>
+                  10                </td>
+                <td>
+                  2035                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5124#ad" class="tooltip gameid_5124">Ever17 -the out of infinity- Premium Edition</a>                                    <div
+                    class="tooltip tooltip_gameid_5124">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145009552" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145009552m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=619">KID</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.13                </td>
+                <td>
+                  12                </td>
+                <td>
+                  1578                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=204#ad" class="tooltip gameid_204">鬼畜王ランス</a>                                    <div
+                    class="tooltip tooltip_gameid_204">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145000078" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145000078m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://retropc.net/alice/30.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=30">ALICESOFT</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.27                </td>
+                <td>
+                  12                </td>
+                <td>
+                  1470                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=28941#ad" class="tooltip gameid_28941">白昼夢の青写真</a>                                    <div
+                    class="tooltip tooltip_gameid_28941">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fhobe_0494%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/hobe_0494/hobe_0494ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://laplacian.jp/yonagi/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=4809">Laplacian</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.74                </td>
+                <td>
+                  12                </td>
+                <td>
+                  1135                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=27720#ad" class="tooltip gameid_27720">抜きゲーみたいな島に住んでる貧乳はどうすりゃいいですか? 2</a>                                    <div
+                    class="tooltip tooltip_gameid_27720">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fqruppo_0002%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/qruppo_0002/qruppo_0002ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://qruppo.com/products/nukitashi2/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=5728">Qruppo</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.70                </td>
+                <td>
+                  9                </td>
+                <td>
+                  1107                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=26245#ad" class="tooltip gameid_26245">さくら、もゆ。 -as the Night&#039;s, Reincarnation-</a>                                    <div
+                    class="tooltip tooltip_gameid_26245">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Ffavorite_0011%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/favorite_0011/favorite_0011ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.favo-soft.jp/soft/product/sakura/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=2763">FAVORITE</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  86.04                </td>
+                <td>
+                  17                </td>
+                <td>
+                  911                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=10511#ad" class="tooltip gameid_10511">CLANNAD FULL VOICE</a>                                    <div
+                    class="tooltip tooltip_gameid_10511">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145017585" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145017585m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/product/clannad/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.10                </td>
+                <td>
+                  14                </td>
+                <td>
+                  867                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=31550#ad" class="tooltip gameid_31550">ヘンタイ・プリズン</a>                                    <div
+                    class="tooltip tooltip_gameid_31550">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fqruppo_0004%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/qruppo_0004/qruppo_0004ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://qruppo.com/products/henpri/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=5728">Qruppo</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.43                </td>
+                <td>
+                  12                </td>
+                <td>
+                  803                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=29016#ad" class="tooltip gameid_29016">Summer Pockets REFLECTION BLUE</a>                                    <div
+                    class="tooltip tooltip_gameid_29016">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fvsat_0256%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/vsat_0256/vsat_0256ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/summer_rb/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  89.04                </td>
+                <td>
+                  9                </td>
+                <td>
+                  785                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=2345#ad" class="tooltip gameid_2345">BALDR FORCE</a>                                    <div
+                    class="tooltip tooltip_gameid_2345">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145006882" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145006882m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  86.77                </td>
+                <td>
+                  11                </td>
+                <td>
+                  720                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=6087#ad" class="tooltip gameid_6087">シンフォニック=レイン 愛蔵版</a>                                    <div
+                    class="tooltip tooltip_gameid_6087">
+                                        <div class="align_center">
+                      <a href="http://www.dlsite.com/soft/dlaf/=/link/work/aid/erogamescape/id/VJ011519.html" target="_blank" rel="noopener"><img src="https://img.dlsite.jp/modpub/images2/work/professional/VJ012000/VJ011519_img_main.jpg" alt="dlsite" width="125" style="border: none;"  loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.kogado.com/sw/contents/kuroneko/sraz/index.htm"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=442">工画堂スタジオ</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.78                </td>
+                <td>
+                  11                </td>
+                <td>
+                  584                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=22704#ad" class="tooltip gameid_22704">天ノ少女《PREMIUM EDITION》</a>                                    <div
+                    class="tooltip tooltip_gameid_22704">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fgung_0009%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/gung_0009/gung_0009ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.gungnir.co.jp/innocentgrey/products/pro_shell3/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1377">Innocent Grey</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.88                </td>
+                <td>
+                  10                </td>
+                <td>
+                  558                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=7441#ad" class="tooltip gameid_7441">Fate/stay night [Realta Nua]</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_7441">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144003522" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144003522m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.kadokawagames.co.jp/game/fatevita/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=789">角川書店</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.02                </td>
+                <td>
+                  13                </td>
+                <td>
+                  356                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=6200#ad" class="tooltip gameid_6200">うたわれるもの -散りゆく者への子守唄-</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_6200">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144200074" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144200074m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://aquaplus.jp/uta/chiri_psp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=644">AQUAPLUS</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.70                </td>
+                <td>
+                  9                </td>
+                <td>
+                  346                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=17131#ad" class="tooltip gameid_17131">Dies irae ～Amantes amentes～</a>                                    <div
+                    class="tooltip tooltip_gameid_17131">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fviews_0568%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/views_0568/views_0568ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.light.gr.jp/light/products/diesirae_cs/windows/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=309">light</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.27                </td>
+                <td>
+                  12                </td>
+                <td>
+                  346                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5485#ad" class="tooltip gameid_5485">AIR</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_5485">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144000691" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144000691m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.gungho.jp/cgame/game/air/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=622">GungHo Works(Interchannel、NECインターチャネル)</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  85.96                </td>
+                <td>
+                  14                </td>
+                <td>
+                  308                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=22900#ad" class="tooltip gameid_22900">うたわれるもの 二人の白皇</a><span style="font-weight:bold;">(PS4)</span>                                    <div
+                    class="tooltip tooltip_gameid_22900">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F107000564" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/107000564m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://aquaplus.jp/uta/oro/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=644">AQUAPLUS</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  89.11                </td>
+                <td>
+                  10                </td>
+                <td>
+                  288                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=31887#ad" class="tooltip gameid_31887">Demons Roots</a>                                    <div
+                    class="tooltip tooltip_gameid_31887">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_368684%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/game/d_368684/d_368684pl.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://akamatoghost.wixsite.com/demonsroots"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=5328">深爪貴族</a>(同人)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  90.80                </td>
+                <td>
+                  7                </td>
+                <td>
+                  212                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=10774#ad" class="tooltip gameid_10774">CLANNAD</a><span style="font-weight:bold;">(PSP)</span>                                    <div
+                    class="tooltip tooltip_gameid_10774">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F177000809" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/177000809m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.prot.co.jp/psp/clannad/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1866">PROTOTYPE</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.74                </td>
+                <td>
+                  14                </td>
+                <td>
+                  203                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5344#ad" class="tooltip gameid_5344">EVE burst error</a><span style="font-weight:bold;">(SS)</span>                                    <div
+                    class="tooltip tooltip_gameid_5344">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F141000568" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/141000568m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://eve.el-dia.net/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=638">イマジニア</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.75                </td>
+                <td>
+                  12                </td>
+                <td>
+                  187                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=23527#ad" class="tooltip gameid_23527">うたわれるもの 二人の白皇</a><span style="font-weight:bold;">(PSV)</span>                                    <div
+                    class="tooltip tooltip_gameid_23527">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F105001395" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/105001395m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://aquaplus.jp/uta/oro/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=644">AQUAPLUS</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.40                </td>
+                <td>
+                  11                </td>
+                <td>
+                  174                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=15090#ad" class="tooltip gameid_15090">STEINS;GATE</a><span style="font-weight:bold;">(PSP)</span>                                    <div
+                    class="tooltip tooltip_gameid_15090">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F177980027" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/177980027m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://steinsgate.jp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=789">角川書店</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.49                </td>
+                <td>
+                  8                </td>
+                <td>
+                  140                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=25761#ad" class="tooltip gameid_25761">親愛なる孤独と苦悩へ</a>                                    <div
+                    class="tooltip tooltip_gameid_25761">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F186067869" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/186067869m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://rakusomoku.web.fc2.com/Shinainaru_kodokuto_kunouhe.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=4662">楽想目</a>(同人)(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.34                </td>
+                <td>
+                  10                </td>
+                <td>
+                  137                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=17335#ad" class="tooltip gameid_17335">Fate/stay night [Realta Nua]</a><span style="font-weight:bold;">(PSV)</span>                                    <div
+                    class="tooltip tooltip_gameid_17335">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F105000109" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/105000109m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.kadokawagames.co.jp/game/fatevita/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=3144">角川ゲームス</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  87.69                </td>
+                <td>
+                  10                </td>
+                <td>
+                  131                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5781#ad" class="tooltip gameid_5781">CROSS&dagger;CHANNEL ～To all people～</a><span style="font-weight:bold;">(PS2)</span>                                    <div
+                    class="tooltip tooltip_gameid_5781">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F144001832" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/144001832m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=619">KID</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  86.23                </td>
+                <td>
+                  12                </td>
+                <td>
+                  128                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=24442#ad" class="tooltip gameid_24442">穢翼のユースティア ～新装版～</a>                                    <div
+                    class="tooltip tooltip_gameid_24442">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fabgktk_0010%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/abgktk_0010/abgktk_0010ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://august-soft.com/eustia_ref/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=609">AUGUST</a>                </td>
+                <td>
+                  90                </td>
+                <td>
+                  89.34                </td>
+                <td>
+                  9                </td>
+                <td>
+                  125                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5424#ad" class="tooltip gameid_5424">Ever17 -the out of infinity-</a><span style="font-weight:bold;">(DC)</span>                                    <div
+                    class="tooltip tooltip_gameid_5424">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F142000547" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/142000547m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=619">KID</a>(解散)                </td>
+                <td>
+                  90                </td>
+                <td>
+                  88.44                </td>
+                <td>
+                  12                </td>
+                <td>
+                  105                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=2894#ad" class="tooltip gameid_2894">君が望む永遠 DVD specification</a>                                    <div
+                    class="tooltip tooltip_gameid_2894">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145009291" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145009291m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.age-soft.com/former/Product/017/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1">&acirc;ge(age)</a>                </td>
+                <td>
+                  89                </td>
+                <td>
+                  84.75                </td>
+                <td>
+                  13                </td>
+                <td>
+                  983                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3374#ad" class="tooltip gameid_3374">シンフォニック=レイン</a>                                    <div
+                    class="tooltip tooltip_gameid_3374">
+                                        <div class="align_center">
+                      <a href="http://www.dlsite.com/soft/dlaf/=/link/work/aid/erogamescape/id/VJ011519.html" target="_blank" rel="noopener"><img src="https://img.dlsite.jp/modpub/images2/work/professional/VJ012000/VJ011519_img_main.jpg" alt="dlsite" width="125" style="border: none;"  loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.kogado.com/sw/contents/kuroneko/sr/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=442">工画堂スタジオ</a>                </td>
+                <td>
+                  89                </td>
+                <td>
+                  86.80                </td>
+                <td>
+                  10                </td>
+                <td>
+                  622                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=2749#ad" class="tooltip gameid_2749">月箱</a>                                    <div
+                    class="tooltip tooltip_gameid_2749">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F186003308" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/186003308m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.typemoon.org/box/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=532">TYPE-MOON</a>                </td>
+                <td>
+                  89                </td>
+                <td>
+                  85.70                </td>
+                <td>
+                  13                </td>
+                <td>
+                  528                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=30183#ad" class="tooltip gameid_30183">蒼の彼方のフォーリズム EXTRA2</a>                                    <div
+                    class="tooltip tooltip_gameid_30183">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fsprite_0008%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/sprite_0008/sprite_0008ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://aokana.net/extra2/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=2849">sprite</a>                </td>
+                <td>
+                  89                </td>
+                <td>
+                  87.52                </td>
+                <td>
+                  9                </td>
+                <td>
+                  465                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=18111#ad" class="tooltip gameid_18111">ファタモルガーナの館</a>                                    <div
+                    class="tooltip tooltip_gameid_18111">
+                                        <div class="align_center">
+                      <a href="http://www.dlsite.com/maniax/dlaf/=/link/work/aid/erogamescape/id/RJ111899.html" target="_blank" rel="noopener"><img src="https://img.dlsite.jp/modpub/images2/work/doujin/RJ112000/RJ111899_img_main.jpg" alt="dlsite" width="125" style="border: none;"  loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://novect.net/fatamorgana/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=3292">Novect(Novectacle)</a>(同人)                </td>
+                <td>
+                  89                </td>
+                <td>
+                  86.75                </td>
+                <td>
+                  11                </td>
+                <td>
+                  409                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=28984#ad" class="tooltip gameid_28984">虚ノ少女《NEW CAST REMASTER EDITION》</a>                                    <div
+                    class="tooltip tooltip_gameid_28984">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fgung_0008%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/gung_0008/gung_0008ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.gungnir.co.jp/innocentgrey/products/pro_shell2re/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1377">Innocent Grey</a>                </td>
+                <td>
+                  89                </td>
+                <td>
+                  88.26                </td>
+                <td>
+                  7                </td>
+                <td>
+                  292                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=14274#ad" class="tooltip gameid_14274">リトルバスターズ! Converted Edition</a><span style="font-weight:bold;">(PSP)</span>                                    <div
+                    class="tooltip tooltip_gameid_14274">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F177001736" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/177001736m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.prot.co.jp/psp/lbc/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1866">PROTOTYPE</a>                </td>
+                <td>
+                  89                </td>
+                <td>
+                  86.88                </td>
+                <td>
+                  10                </td>
+                <td>
+                  132                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=6234#ad" class="tooltip gameid_6234">車輪の国、向日葵の少女</a>                                    <div
+                    class="tooltip tooltip_gameid_6234">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fakbs_0004%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/akbs_0004/akbs_0004ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.akabeesoft2.com/syarin/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1387">あかべぇそふとつぅ</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  85.89                </td>
+                <td>
+                  12                </td>
+                <td>
+                  5440                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=1530#ad" class="tooltip gameid_1530">君が望む永遠</a>                                    <div
+                    class="tooltip tooltip_gameid_1530">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D604ger0009%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/604ger0009/604ger0009ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.age-soft.com/former/Product/Kimibo/index.htm"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1">&acirc;ge(age)</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  84.03                </td>
+                <td>
+                  15                </td>
+                <td>
+                  2389                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=1714#ad" class="tooltip gameid_1714">家族計画</a>                                    <div
+                    class="tooltip tooltip_gameid_1714">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fcdb_0143%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/cdb_0143/cdb_0143ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=190">D.O.(ディーオー)</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  85.68                </td>
+                <td>
+                  12                </td>
+                <td>
+                  1826                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=4673#ad" class="tooltip gameid_4673">パルフェ ～ショコラ second brew～</a>                                    <div
+                    class="tooltip tooltip_gameid_4673">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145012582" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145012582m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  88                </td>
+                <td>
+                  86.26                </td>
+                <td>
+                  11                </td>
+                <td>
+                  1795                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=17811#ad" class="tooltip gameid_17811">ChuSingura46+1 -忠臣蔵46+1-</a>                                    <div
+                    class="tooltip tooltip_gameid_17811">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Finre_0001%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/inre_0001/inre_0001ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://inre-soft.com/index2.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=3753">インレ</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  86.18                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1619                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=12009#ad" class="tooltip gameid_12009">Ever17 -the out of infinity-</a><span style="font-weight:bold;">(PSP)</span>                                    <div
+                    class="tooltip tooltip_gameid_12009">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F177001035" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/177001035m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=619">KID</a>(解散)                </td>
+                <td>
+                  88                </td>
+                <td>
+                  86.12                </td>
+                <td>
+                  13                </td>
+                <td>
+                  262                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=33621#ad" class="tooltip gameid_33621">アマカノ2+</a>                                    <div
+                    class="tooltip tooltip_gameid_33621">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fnext_0370%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/next_0370/next_0370ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://azarashi-soft.nexton-net.jp/amakano2-plus/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=4340">あざらしそふと</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  86.21                </td>
+                <td>
+                  10                </td>
+                <td>
+                  206                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=25166#ad" class="tooltip gameid_25166">BLACK SHEEP TOWN</a>                                    <div
+                    class="tooltip tooltip_gameid_25166">
+                                        <div class="align_center">
+                      <a href="http://www.dlsite.com/home/dlaf/=/link/work/aid/erogamescape/id/RJ01122394.html" target="_blank" rel="noopener"><img src="https://img.dlsite.jp/modpub/images2/work/doujin/RJ01123000/RJ01122394_img_main.jpg" alt="dlsite" width="125" style="border: none;"  loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://blacksheeptown.com/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=5406">BA-KU</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  86.98                </td>
+                <td>
+                  9                </td>
+                <td>
+                  172                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=30421#ad" class="tooltip gameid_30421">月姫 -A piece of blue glass moon-</a><span style="font-weight:bold;">(PS4)</span>                                    <div
+                    class="tooltip tooltip_gameid_30421">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F107004785" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/107004785m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.typemoon.com/products/tsukihime/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=532">TYPE-MOON</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  85.60                </td>
+                <td>
+                  13                </td>
+                <td>
+                  134                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=25899#ad" class="tooltip gameid_25899">十三機兵防衛圏</a><span style="font-weight:bold;">(PS4)</span>                                    <div
+                    class="tooltip tooltip_gameid_25899">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F107003298" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/107003298m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://13sar.jp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=737">ATLUS</a>                </td>
+                <td>
+                  88                </td>
+                <td>
+                  86.42                </td>
+                <td>
+                  9                </td>
+                <td>
+                  108                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=13640#ad" class="tooltip gameid_13640">穢翼のユースティア</a>                                    <div
+                    class="tooltip tooltip_gameid_13640">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fabgktk_0010%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/abgktk_0010/abgktk_0010ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://august-soft.com/eustia/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=609">AUGUST</a>                </td>
+                <td>
+                  87                </td>
+                <td>
+                  86.21                </td>
+                <td>
+                  10                </td>
+                <td>
+                  3401                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=2542#ad" class="tooltip gameid_2542">BALDR FORCE EXE</a>                                    <div
+                    class="tooltip tooltip_gameid_2542">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145006883" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145006883m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  87                </td>
+                <td>
+                  85.74                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1614                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=633#ad" class="tooltip gameid_633">Phantom ～Phantom of inferno～</a>                                    <div
+                    class="tooltip tooltip_gameid_633">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fhobc_0143%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/hobc_0143/hobc_0143ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.nitroplus.co.jp/pc/lineup/into_01/phantom_int/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=215">NitroPlus</a>                </td>
+                <td>
+                  87                </td>
+                <td>
+                  85.25                </td>
+                <td>
+                  11                </td>
+                <td>
+                  1239                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=28762#ad" class="tooltip gameid_28762">さくらの雲＊スカアレットの恋</a>                                    <div
+                    class="tooltip tooltip_gameid_28762">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fcabbage_0005%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/cabbage_0005/cabbage_0005ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://cabbage-soft.com/products/scarlet/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=5078">きゃべつそふと</a>                </td>
+                <td>
+                  87                </td>
+                <td>
+                  85.90                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1223                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=26972#ad" class="tooltip gameid_26972">蒼の彼方のフォーリズム Perfect Edition</a>                                    <div
+                    class="tooltip tooltip_gameid_26972">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fsprite_0004%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/sprite_0004/sprite_0004ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://aokana.net/products/4thanniversarybox/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=2849">sprite</a>                </td>
+                <td>
+                  87                </td>
+                <td>
+                  86.77                </td>
+                <td>
+                  9                </td>
+                <td>
+                  261                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=21831#ad" class="tooltip gameid_21831">CHAOS;CHILD</a><span style="font-weight:bold;">(PSV)</span>                                    <div
+                    class="tooltip tooltip_gameid_21831">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F105000863" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/105000863m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://chaoschild.jp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=2282">MAGES.(5pb.)</a>                </td>
+                <td>
+                  87                </td>
+                <td>
+                  85.40                </td>
+                <td>
+                  10                </td>
+                <td>
+                  119                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=13335#ad" class="tooltip gameid_13335">CROSS&dagger;CHANNEL ～To all people～</a><span style="font-weight:bold;">(PSP)</span>                                    <div
+                    class="tooltip tooltip_gameid_13335">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F177001456" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/177001456m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=951">サイバーフロント</a>(解散)                </td>
+                <td>
+                  87                </td>
+                <td>
+                  84.52                </td>
+                <td>
+                  13                </td>
+                <td>
+                  108                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=12519#ad" class="tooltip gameid_12519">リトルバスターズ!エクスタシー 全年齢対象版</a>                                    <div
+                    class="tooltip tooltip_gameid_12519">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145057358" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145057358m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/product/little_ex/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  87                </td>
+                <td>
+                  84.84                </td>
+                <td>
+                  13                </td>
+                <td>
+                  100                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=7835#ad" class="tooltip gameid_7835">G線上の魔王</a>                                    <div
+                    class="tooltip tooltip_gameid_7835">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fakbs_0028%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/akbs_0028/akbs_0028ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.akabeesoft2.com/g_sen/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1387">あかべぇそふとつぅ</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.50                </td>
+                <td>
+                  11                </td>
+                <td>
+                  4908                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=10488#ad" class="tooltip gameid_10488">リトルバスターズ!エクスタシー</a>                                    <div
+                    class="tooltip tooltip_gameid_10488">
+                                        <div class="align_center">
+                      <a href="https://www.digiket.com/work/show/_data/ID=ITM0089550/AFID=af001/" target="_blank" rel="noopener"><img src="https://img.digiket.net/cg/89/ITM0089550_1_at140.jpg" alt="digiket" width="125" style="border: none;"  loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/product/little_ex/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.47                </td>
+                <td>
+                  12                </td>
+                <td>
+                  3062                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=5148#ad" class="tooltip gameid_5148">俺たちに翼はない</a>                                    <div
+                    class="tooltip tooltip_gameid_5148">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fnavel_0013%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/navel_0013/navel_0013ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.project-navel.com/oretsuba/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1058">Navel</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.09                </td>
+                <td>
+                  14                </td>
+                <td>
+                  2756                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3852#ad" class="tooltip gameid_3852">RanceVI -ゼス崩壊-</a>                                    <div
+                    class="tooltip tooltip_gameid_3852">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Falice_0016%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/alice_0016/alice_0016ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.alicesoft.com/rance6/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=30">ALICESOFT</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.54                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1819                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=28639#ad" class="tooltip gameid_28639">9-nine- ゆきいろゆきはなゆきのあと</a>                                    <div
+                    class="tooltip tooltip_gameid_28639">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fclear_0030%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/clear_0030/clear_0030ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://palette.clearrave.co.jp/product/yukiiro/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=403">ぱれっと</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  85.78                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1312                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3174#ad" class="tooltip gameid_3174">うたわれるもの DVD版</a>                                    <div
+                    class="tooltip tooltip_gameid_3174">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145009973" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145009973m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://leaf.aquaplus.jp/product/uta/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=316">Leaf</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  85.13                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1208                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=24606#ad" class="tooltip gameid_24606">Summer Pockets</a>                                    <div
+                    class="tooltip tooltip_gameid_24606">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fvsat_0239%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/vsat_0239/vsat_0239ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/summer/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  85.67                </td>
+                <td>
+                  10                </td>
+                <td>
+                  1140                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=3868#ad" class="tooltip gameid_3868">Phantom INTEGRATION</a>                                    <div
+                    class="tooltip tooltip_gameid_3868">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fhobc_0143%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/hobc_0143/hobc_0143ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://www.nitroplus.co.jp/pc/lineup/into_01/phantom_int/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=215">NitroPlus</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  85.43                </td>
+                <td>
+                  9                </td>
+                <td>
+                  1103                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=10332#ad" class="tooltip gameid_10332">君が望む永遠 ～Latest Edition～</a>                                    <div
+                    class="tooltip tooltip_gameid_10332">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145017623" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145017623m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.age-soft.com/former/Product/kiminozole/index.htm"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1">&acirc;ge(age)</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  83.98                </td>
+                <td>
+                  14                </td>
+                <td>
+                  786                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=1246#ad" class="tooltip gameid_1246">EVE burst error</a>                                    <div
+                    class="tooltip tooltip_gameid_1246">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fhobc_0012%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/hobc_0012/hobc_0012ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://eve.el-dia.net/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=124">C&rsquo;s ware</a>(解散)                </td>
+                <td>
+                  86                </td>
+                <td>
+                  85.05                </td>
+                <td>
+                  12                </td>
+                <td>
+                  649                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=23054#ad" class="tooltip gameid_23054">CHAOS;CHILD</a>                                    <div
+                    class="tooltip tooltip_gameid_23054">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145053697" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145053697m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://chaoschild-pc.jp/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=2282">MAGES.(5pb.)</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.97                </td>
+                <td>
+                  10                </td>
+                <td>
+                  363                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=26999#ad" class="tooltip gameid_26999">殻ノ少女《FULL VOICE HD SIZE EDITION》</a>                                    <div
+                    class="tooltip tooltip_gameid_26999">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fgung_0007%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/gung_0007/gung_0007ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.gungnir.co.jp/innocentgrey/products/pro_shellhd/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1377">Innocent Grey</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  86.10                </td>
+                <td>
+                  8                </td>
+                <td>
+                  350                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=20848#ad" class="tooltip gameid_20848">CROSS&dagger;CHANNEL -FINAL COMPLETE-</a>                                    <div
+                    class="tooltip tooltip_gameid_20848">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fwill_0247%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/will_0247/will_0247ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.crosschannel-game.com/#/top/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=3748">CROSS&dagger;CHANNEL</a>                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.78                </td>
+                <td>
+                  11                </td>
+                <td>
+                  301                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=30366#ad" class="tooltip gameid_30366">パルフェリメイク</a>                                    <div
+                    class="tooltip tooltip_gameid_30366">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D587apc13852%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/587apc13852/587apc13852ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  86                </td>
+                <td>
+                  84.75                </td>
+                <td>
+                  11                </td>
+                <td>
+                  242                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=20981#ad" class="tooltip gameid_20981">もんむす・くえすと! ぱらどっくすRPG 前章</a>                                    <div
+                    class="tooltip tooltip_gameid_20981">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fdc%2Fdoujin%2F-%2Fdetail%2F%3D%2Fcid%3Dd_078690%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/game/d_078690/d_078690pl.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://mon110.sakura.ne.jp/mong/top.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=3211">とろとろレジスタンス</a>(同人)                </td>
+                <td>
+                  86                </td>
+                <td>
+                  85.71                </td>
+                <td>
+                  11                </td>
+                <td>
+                  101                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=7169#ad" class="tooltip gameid_7169">この青空に約束を―</a>                                    <div
+                    class="tooltip tooltip_gameid_7169">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D30087apc10493%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/30087apc10493/30087apc10493ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                          </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=84">戯画</a>(解散)                </td>
+                <td>
+                  85                </td>
+                <td>
+                  83.41                </td>
+                <td>
+                  13                </td>
+                <td>
+                  4220                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=84#ad" class="tooltip gameid_84">AIR</a>                                    <div
+                    class="tooltip tooltip_gameid_84">
+                                        <div class="align_center">
+                      <a href="https://affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=3146&amp;goods_url=https%3A%2F%2Fwww.suruga-ya.jp%2Fproduct%2Fdetail%2F145003911" rel="nofollow" target="_blank"><img src="https://www.suruga-ya.jp/pics/boxart_m/145003911m.jpg" style="width: 125px;" loading="lazy"></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="https://key.visualarts.gr.jp/product/air/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=83">Key</a>                </td>
+                <td>
+                  85                </td>
+                <td>
+                  82.82                </td>
+                <td>
+                  15                </td>
+                <td>
+                  3126                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=14237#ad" class="tooltip gameid_14237">グリザイアの果実 -LE FRUIT DE LA GRISAIA-</a>                                    <div
+                    class="tooltip tooltip_gameid_14237">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Ffwing_0010%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/fwing_0010/fwing_0010ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://frontwing.jp/product/grisaia/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=275">FrontWing</a>                </td>
+                <td>
+                  85                </td>
+                <td>
+                  83.15                </td>
+                <td>
+                  10                </td>
+                <td>
+                  3085                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=7402#ad" class="tooltip gameid_7402">遥かに仰ぎ、麗しの</a>                                    <div
+                    class="tooltip tooltip_gameid_7402">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fwill_0158%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/will_0158/will_0158ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.pulltop.com/gp06/"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=689">PULLTOP</a>                </td>
+                <td>
+                  85                </td>
+                <td>
+                  82.94                </td>
+                <td>
+                  12                </td>
+                <td>
+                  3073                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=11236#ad" class="tooltip gameid_11236">真剣で私に恋しなさい!</a>                                    <div
+                    class="tooltip tooltip_gameid_11236">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fhawkeye_0002%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/hawkeye_0002/hawkeye_0002ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.minatosoft.com/majikoi/index.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1958">みなとそふと</a>                </td>
+                <td>
+                  85                </td>
+                <td>
+                  81.70                </td>
+                <td>
+                  14                </td>
+                <td>
+                  2781                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=4628#ad" class="tooltip gameid_4628">Fate/hollow ataraxia</a>                                    <div
+                    class="tooltip tooltip_gameid_4628">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fmono%2Fpcgame%2F-%2Fdetail%2F%3D%2Fcid%3D935apc12965%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/mono/game/935apc12965/935apc12965ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.typemoon.com/products/hollow/index_over18.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=532">TYPE-MOON</a>                </td>
+                <td>
+                  85                </td>
+                <td>
+                  82.25                </td>
+                <td>
+                  12                </td>
+                <td>
+                  2570                </td>
+              </tr>
+                            <tr>
+                <td>
+                  <a href="game.php?game=9706#ad" class="tooltip gameid_9706">世界でいちばんNG(ダメ)な恋</a>                                    <div
+                    class="tooltip tooltip_gameid_9706">
+                                        <div class="align_center">
+                      <a href="https://al.dmm.co.jp/?lurl=https%3A%2F%2Fdlsoft.dmm.co.jp%2Fdetail%2Fwill_0248%2F&af_id=egsa-001&ch=toolbar&ch_id=text" onclick="javascript:_gaq.push(['_trackPageview', '/click/dmm']);" target="_blank" rel="noopener"><img src="https://pics.dmm.co.jp/digital/pcgame/will_0248/will_0248ps.jpg" alt="dmm" width="125" style="border: none;" loading="lazy" /></a>                    </div>
+                                                            <div class="align_center" style="margin: 5px 0px;"><a
+                        href="http://www.hermit-game.com/h03/top.html"
+                        class="ohp_link_01">OHP</a></div>
+                                      </div>
+                                  </td>
+                <td>
+                  <a href="brand.php?brand=1018">HERMIT</a>                </td>
+                <td>
+                  85                </td>
+                <td>
+                  82.72                </td>
+                <td>
+                  11                </td>
+                <td>
+                  2312                </td>
+              </tr>
+                          </table>
+          </div>
+                    <div id="statistics_table_nav_footer" style="margin-bottom: 15px;">
+                                    <a
+              href="/~ap2/ero/toukei_kaiseki/toukei_median.php?offset=100&year=1900&count=100#statistics_table_main">次の100件を見る</a>
+                      </div>
+        </div>
+
+      </div>
+      <!-- main　ここまで -->
+
+      <!-- left_menu　ここから -->
+      <div id="left_menu">
+        <div id="login">
+          <h2>ログイン</h2>
+          <ul>
+  <li>
+  <form action="login.php" method="post" name="login_form" id="login_form">
+    <input type="hidden" name="sorce_url" value="/~ap2/ero/toukei_kaiseki/toukei_median.php?count=100&amp;year=1900">
+    <a href="javascript:login_form.submit()">ログイン</a>
+  </form>
+  <li><a href="regForm.php">新規ID取得</a></li>
+</ul>        </div>
+        <div id="serch_box" class="bottom-margin">
+          <h2>検索</h2>
+          <form action="kensaku.php" method="get">
+<p>
+  <!-- 検索種別1 -->
+  <select name="category">
+  <option value="game" id="serch_category_game" >ゲーム</option>
+  <option value="brand" id="serch_category_brand" >ブランド</option>
+  <option value="creater" id="serch_category_creater" >クリエイター</option>
+  <option value="music" id="serch_category_music" >音楽</option>
+  <option value="musicitem" id="serch_category_musicitem" >音楽関連商品</option>
+  <option value="user" id="serch_category_user" >ユーザー</option>
+  <option value="pov" id="serch_category_pov" >POV/タグ</option>
+  <option value="sql" id="serch_category_sql" >SQL</option>
+  <option value="shubetu_detail_name" id="serch_category_shubetu_detail_name" >職種詳細</option>
+  <option value="creater_all" id="serch_category_creater_all" >クリエイター(すべて)</option>
+  <option value="character" id="serch_category_character" >キャラクター</option>
+  </select>
+  <!-- 検索種別2 -->
+  <select name="word_category">
+  <option value="name" id="serch_word_name" >名前</option>
+  <option value="furigana" id="serch_word_furigana" >フリガナ</option>
+  </select>
+  <input type="text" name="word" style="width: 160px;" id="serch_word" value="" size="15" />
+  <input type="submit" value="検索" />
+  <input type="hidden" name="mode" value="normal" />
+  </p>
+</form>
+        </div>
+        <div id="monthly_statistics_tables">
+          <h2>統計表</h2>
+          <ul>
+            <li><a href="index_toukei.php">統計表目次</a></li>
+          </ul>
+          <h3>統計表(中央値順)</h3>
+          <ul>
+            <li><a href="toukei_median.php">すべてのゲーム</a></li>
+            <li><a href="toukei_median.php?erogame=t">18禁のみ</a></li>
+            <li><a href="toukei_median.php?erogame=f">非18禁のみ</a></li>
+            <li><a href="toukei_median.php?coterie=f">商業のみ</a></li>
+            <li><a href="toukei_median.php?coterie=t">同人のみ</a></li>
+            <li><a href="toukei_median.php?erogame=t&coterie=t">18禁の同人のみ</a></li>
+            <li><a href="toukei_median.php?erogame=f&coterie=t">非18禁の同人のみ</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- left_menu　ここまで -->
+
+    </div>
+    <!-- wrapper　ここまで -->
+
+    <!-- right_menu　ここから -->
+    <div id="right_menu">
+      <!-- <h2>右メニュー</h2> -->
+    </div>
+    <!-- right_menu　ここまで -->
+
+    <!-- footer　ここから -->
+    <div id="footer">
+
+      <hr />
+      <!-- generated_date　ここから -->
+      <div id="generated_date">
+        <p>この文書は2024年09月01日 13：55：17に生成されました。</p>      </div>
+      <!-- generated_date　ここまで -->
+      <!-- site_infomation　ここから -->
+      <div id="site_infomation">
+        <address>
+          ひろいん<br />
+          egamescape &#64; gmail.com
+        </address>
+      </div>
+      <!-- site_infomation　ここまで -->
+
+    </div>
+    <!-- footer　ここまで -->
+
+  </div>
+  <!-- container　ここまで -->
+
+</body>
+
+</html>

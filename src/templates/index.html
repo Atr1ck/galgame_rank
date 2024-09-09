@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>批评空间评论数超100游戏排名</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Lobster', cursive;  /* 使用 Google Fonts 的 Lobster 字体 */
+            font-size: 48px;  /* 设置字体大小 */
+            color: #333;  /* 设置字体颜色 */
+        }
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        th, td {
+            height: 30px;
+            border: 1.5px solid black;
+            padding: 8px;
+            text-align: left;
+            font-family: 'Noto Sans JP', cursive;
+        }
+        img {
+            width: 100px;  /* 图片的宽度 */
+            height: auto;  /* 高度根据宽度自动调整 */
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/index/web.js"></script>
+    <h1>批评空间评论数超100游戏排名</h1>
+    <a href="/add">添加新数据</a>  <!-- 跳转到添加数据页面 -->
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>游戏名</th>
+                <th>封面</th>
+                <th>会社</th>
+                <th>中央值</th>
+                <th>平均值</th>
+                <th>标准偏差</th>
+                <th>评论数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 数据将由 JavaScript 动态插入 -->
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <button id="prev-btn" onclick="changePage(-1)">上一页</button>
+        <button id="next-btn" onclick="changePage(1)">下一页</button>
+    </div>
+
+    <script>
+        // 使用 Fetch API 从后端获取数据
+        let currentPage = 1;
+        const limit = 200;
+
+        function fetchData(page)
+        {
+            fetch(`/data?page=${page}&limit=${limit}`) 
+            .then(response => response.json())
+            .then(data => {
+                let tableBody = document.querySelector('#data-table tbody');
+                tableBody.innerHTML = ''; // 清空表格内容
+
+                data.data.forEach(row => {
+                    let tr = document.createElement('tr');
+                    
+                    // 创建表格单元格并插入数据
+                    let IdTd = document.createElement('td');
+                    IdTd.textContent = row.id;
+                    tr.appendChild(IdTd);
+
+                    let NameTd = document.createElement('td');
+                    let EroLink = document.createElement('a');
+                    EroLink.href = row.game_link;
+                    EroLink.textContent = row.game_name;
+                    EroLink.target = '_blank';
+                    NameTd.appendChild(EroLink);
+                    tr.appendChild(NameTd);
+                    
+                    let ImgLinkTd = document.createElement('td');
+                    let img = document.createElement('img');
+                    img.src = row.img_link;
+                    ImgLinkTd.appendChild(img);
+                    tr.appendChild(ImgLinkTd);
+
+                    let BrNameTd = document.createElement('td');
+                    let OWLink = document.createElement('a');
+                    OWLink.href = row.brand_link;
+                    OWLink.textContent = row.brand_name;
+                    OWLink.target = '_blank';
+                    BrNameTd.appendChild(OWLink);
+                    tr.appendChild(BrNameTd);
+
+                    let MediTd = document.createElement('td');
+                    MediTd.textContent = row.medium_value;
+                    tr.appendChild(MediTd);
+
+                    let AverTd = document.createElement('td');
+                    AverTd.textContent = row.average_value;
+                    tr.appendChild(AverTd);
+
+                    let StandTd = document.createElement('td');
+                    StandTd.textContent = row.standard_deviation;
+                    tr.appendChild(StandTd);
+
+                    let ComTd = document.createElement('td');
+                    ComTd.textContent = row.comments;
+                    tr.appendChild(ComTd);
+
+                    let ActionTd = document.createElement('td');
+                    let deleteButton = document.createElement('button');
+                    deleteButton.textContent = '删除';
+                    deleteButton.onclick = function() {
+                        deleteData(row.id);
+                    };
+                    ActionTd.appendChild(deleteButton);
+                    tr.appendChild(ActionTd)
+                    // 将这一行插入到表格中
+                    tableBody.appendChild(tr);
+                });
+
+                document.getElementById('prev-btn').disabled = (data.page === 1); // 在第一页时上一页按钮被禁用
+                document.getElementById('next-btn').disabled = (data.page === data.total_pages); // 在最后一页是时下一页按钮被禁用
+            });
+        }
+        
+        function changePage(delta) {
+            currentPage += delta;
+            fetchData(currentPage);
+
+            // 自动回到顶部
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function deleteData(id) {
+            fetch(`/delete/${id}`, {
+                method: 'DELETE'
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.message);
+                // 刷新数据表格
+                location.reload();
+                fetchData(currentPage)
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        fetchData(currentPage);
+    </script>
+</body>
+</html>
+

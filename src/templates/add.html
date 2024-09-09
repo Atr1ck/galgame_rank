@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加数据</title>
+    <style>
+        /* 简单样式 */
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        body{
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/index/web.js"></script>
+    <h1>添加新游戏数据</h1>
+    <form method="POST" action="/add">
+        <label for ="Name">游戏名:</label>
+        <input type="text" id="Name" name="Name" required>
+
+        <label for ="ScaLink">批评空间链接:</label>
+        <input type="text" id="ScaLink" name="ScaLink" required>
+
+        <label for ="ImgLink">图片链接:</label>
+        <input type="text" id="ImgLink" name="ImgLink" required>
+
+        <label for ="BrName">会社:</label>
+        <input type="text" id="BrName" name="BrName" required>
+
+        <label for ="OffiWeb">游戏官网:</label>
+        <input type="text" id="OffiWeb" name="OffiWeb" required>
+
+        <label for ="Medium">中央值:</label>
+        <input type="text" id="Medium" name="Medium" required>
+
+        <label for ="Average">平均值:</label>
+        <input type="text" id="Average" name="Average" required>
+
+        <label for ="Standard">标准偏差:</label>
+        <input type="text" id="Standard" name="Standard" required>
+
+        <label for ="Comments">评论数:</label>
+        <input type="text" id="Comments" name="Comments" required>
+        
+        <button type="submit">添加</button>
+    </form>
+
+    <a href="/">返回主页</a> <!-- 返回主页 -->
+</body>
+</html>
