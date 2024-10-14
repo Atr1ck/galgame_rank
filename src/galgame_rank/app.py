@@ -94,45 +94,6 @@ def add_data():
     connection.close()
 
     return redirect('/')
-
-# 搜索
-@app.route('/search', methods=['GET'])
-def search():
-    page = int(request.args.get('page', 1))
-    limit = int(request.args.get('limit', 200))
-    offset = (page - 1) * limit
-    query = request.args.get('query', '')
-    search_by = request.args.get('searchby', 'name')
-    
-    connection = get_db_connection()
-    cursor = connection.cursor(dictionary=True)
-
-    if query == '':
-        cursor.execute("SELECT * FROM galgame")
-        rows = cursor.fetchall()
-        cursor.execute("SELECT COUNT(*) as count FROM galgame")
-        total_count = cursor.fetchone()['count']
-    else:
-        if search_by == 'name':
-            cursor.execute("SELECT * FROM galgame WHERE LOWER(game_name) LIKE %s LIMIT %s OFFSET %s", (f"%{query.lower()}%", limit, offset))
-            rows = cursor.fetchall()
-            cursor.execute("SELECT COUNT(*) as count FROM galgame WHERE LOWER(game_name) LIKE %s", (f"%{query.lower()}%",))
-            total_count = cursor.fetchone()['count']
-        elif search_by == 'brand':
-            cursor.execute("SELECT * FROM galgame WHERE LOWER(brand_name) LIKE %s LIMIT %s OFFSET %s", (f"%{query.lower()}%", limit, offset))
-            rows = cursor.fetchall()
-            cursor.execute("SELECT COUNT(*) as count FROM galgame WHERE LOWER(game_name) LIKE %s", (f"%{query.lower()}%",))
-            total_count = cursor.fetchone()['count']
-
-    cursor.close()
-    connection.close()
-
-    return jsonify({
-        'data': rows,
-        'total_count': total_count,
-        'page': page,
-        'total_pages': (total_count + limit - 1) // limit  # 计算总页数
-    })
     
 # 删除数据库中的数据
 @app.route('/delete/<int:id>', methods=['DELETE'])

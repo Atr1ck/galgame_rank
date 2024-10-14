@@ -84,13 +84,16 @@
     </table>
 
     <div class="pagination">
+        <button id="first-btn" onclick="changePage('first')">首页</button>
         <button id="prev-btn" onclick="changePage(-1)">上一页</button>
         <button id="next-btn" onclick="changePage(1)">下一页</button>
+        <button id="last-btn" onclick="changePage('last')">尾页</button>
     </div>
 
     <script>
         // 使用 Fetch API 从后端获取数据
         let currentPage = 1;
+        let totalpages;
         const limit = 200;
 
         function fetchData(page)
@@ -165,11 +168,26 @@
 
                 document.getElementById('prev-btn').disabled = (data.page === 1); // 在第一页时上一页按钮被禁用
                 document.getElementById('next-btn').disabled = (data.page === data.total_pages); // 在最后一页是时下一页按钮被禁用
+                totalpages = data.total_pages;
             });
         }
 
+        document.getElementById('searchInput').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            fetchData(1);  // 按下Enter键时，触发搜索
+        }
+        });
+
         function changePage(delta) {
-            currentPage += delta;
+            if (delta === "first"){
+                currentPage = 1;
+            }
+            else if (delta === "last"){
+                currentPage = totalpages;
+            }
+            else{
+                currentPage += delta;
+            }
             fetchData(currentPage);
 
             // 自动回到顶部
