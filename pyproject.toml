@@ -1,0 +1,23 @@
+[project]
+name = "galgame_rank"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Atr1ck", email = "3126670240@qq.com"},
+]
+dependencies = [
+    "mysql-connector>=2.2.9",
+    "flask>=3.0.3",
+    "pandas>=2.2.3",
+    "openpyxl>=3.1.5",
+    "requests>=2.32.3",
+    "beautifulsoup4>=4.12.3",
+    "lxml>=5.3.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false

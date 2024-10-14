@@ -8,7 +8,7 @@ try:
         user="atr1ck",
         password="884621809",
         host="localhost",
-        database="erogames",
+        database="galgame",
         charset='utf8mb4',
         collation='utf8mb4_unicode_ci'
     )

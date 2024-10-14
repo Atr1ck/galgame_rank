@@ -1,9 +1,11 @@
 import csv
-import time
 from time import sleep
 import requests
-from lxml import etree
 from bs4 import BeautifulSoup
+from pathlib import Path
+
+current_dir = Path(__file__).resolve().parent
+
 
 def fetch_with_retries(url, headers, retries=3, backoff_factor=1):
     """
@@ -26,7 +28,7 @@ def fetch_with_retries(url, headers, retries=3, backoff_factor=1):
             attempt += 1
             wait_time = backoff_factor * (2 ** (attempt - 1))  # 指数回退策略
             print(f"请求超时，正在重试 {attempt}/{retries} ... 等待 {wait_time} 秒")
-            time.sleep(wait_time)
+            sleep(wait_time)
         except requests.exceptions.RequestException as e:
             # 捕获其他可能的异常
             print(f"请求失败: {e}")
@@ -37,7 +39,7 @@ def fetch_with_retries(url, headers, retries=3, backoff_factor=1):
     return None
 
 # 打开文件
-with open('games_info.csv', mode='w', newline='', encoding='utf-8') as csvfile: 
+with open(f'{current_dir}/data/games_info.csv', mode='w', newline='', encoding='utf-8') as csvfile: 
         writer = csv.writer(csvfile)
         writer.writerow(['游戏名称', '批评空间链接', '图片链接', '会社', '游戏官网', '中央值', '平均值', '标准偏差', '评论数'])
         offset = 0
@@ -50,8 +52,6 @@ with open('games_info.csv', mode='w', newline='', encoding='utf-8') as csvfile:
             response = fetch_with_retries(url, headers, retries=5, backoff_factor=1)
             html = response.text
             soup = BeautifulSoup(html, "lxml")
-            with open('data1.txt', 'w') as f:
-                f.write(soup.prettify())
             items = soup.find_all('tr')
             if len(items) == 1:
                 break
