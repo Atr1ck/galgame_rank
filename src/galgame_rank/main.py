@@ -1,6 +1,5 @@
 import mysql.connector
 from mysql.connector import Error
-import sys  
 import pandas as pd
 
 try:
@@ -62,12 +61,12 @@ try:
             print(row)
 
         # 更新数据
-        #cursor.execute("UPDATE students SET age = %s WHERE name = %s", (23, "Alice"))
+        #cursor.execute("UPDATE galgame SET gamename = %s WHERE name = %s", ("秽翼的尤斯蒂娅", "穢翼のユースティア"))
         #connection.commit()
         #print("数据更新成功")
 
         # 删除数据
-        #cursor.execute("DELETE FROM students WHERE name = %s", ("Bob",))
+        #cursor.execute("DELETE FROM galgame WHERE name = %s", ("秽翼的尤斯蒂娅",))
         #connection.commit()
         #print("数据删除成功")
 

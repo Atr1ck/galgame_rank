@@ -166,8 +166,8 @@
                     tableBody.appendChild(tr);
                 });
 
-                document.getElementById('prev-btn').disabled = (data.page === 1); // 在第一页时上一页按钮被禁用
-                document.getElementById('next-btn').disabled = (data.page === data.total_pages); // 在最后一页是时下一页按钮被禁用
+                document.getElementById('prev-btn').disabled = (page === 1); // 在第一页时上一页按钮被禁用
+                document.getElementById('next-btn').disabled = (page === data.total_pages); // 在最后一页是时下一页按钮被禁用
                 totalpages = data.total_pages;
             });
         }

@@ -57,19 +57,24 @@ def get_data():
 
     return jsonify({
         'data': rows,
-        'total_count': total_count,
-        'page': page,
         'total_pages': (total_count + limit - 1) // limit  # 计算总页数
     })
 
 @app.route('/')
-def index():
-    return render_template('index.html')  # 返回HTML页面
+def login():
+    return render_template('login.html')  # 返回HTML页面
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
 # 添加数据到数据库
 @app.route('/add')
 def add_data_page():
     return render_template('add.html') #返回添加数据页面
+
+@app.route('/check', methods=['GET'])
+def check():
+   return  
 
 @app.route('/add', methods=['POST'])
 def add_data():
@@ -83,7 +88,7 @@ def add_data():
     standard_deviation = request.form['Standard']
     comments = request.form['Comments']
 
-    connection = get_db_connection
+    connection = get_db_connection()
     cursor = connection.cursor()
 
     cursor.execute('''INSERT INTO galgame (game_name, game_link, img_link, brand_name, brand_link, medium_value, average_value, standard_deviation, comments) 
