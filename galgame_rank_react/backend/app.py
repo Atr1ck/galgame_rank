@@ -2,10 +2,11 @@ import mysql.connector
 from mysql.connector import Error
 from flask import Flask, render_template, jsonify, request, redirect
 from pathlib import Path
+from flask_cors import CORS
 
 current_dir = Path(__file__).resolve().parent
 app = Flask(__name__)
-
+CORS(app)
 def get_db_connection():
     try:
         connection = mysql.connector.connect(
