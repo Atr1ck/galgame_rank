@@ -1,8 +1,6 @@
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query"
 import { useState } from "react";
 
-const queryCLient = new QueryClient();
-
 function TopNavi({query, setQuery, searchBy, setSearchBy} : {query:string, setQuery: Function, searchBy:string, setSearchBy:Function}) {
     return (
         <div className="flex flex-row h-12 w-full rounded-lg bg-slate-50 shadow-md py-3 pl-40 justify-around">
@@ -45,12 +43,30 @@ function SearchBar({query, setQuery, searchBy, setSearchBy} : {query:string, set
     )
 }
 
-function Rank({ query, searchBy, page, limit} : {query:string, searchBy:string, page:number, limit:number}) {
+interface Game {
+    id: number,
+    game_link: string,
+    img_link: string,
+    game_name: string,
+    brand_name: string,
+    brand_link: string,
+    medium_value: number,
+    average_value: number,
+    standard_deviation: number,
+    comments: number 
+}
+
+interface ApiResponse<T> {
+    data: T[];       // rows 数据的类型，假设为泛型数组
+    total_pages: number;  // 总页数
+}
+
+function Rank({query, searchBy, page, setTotalpages}: {query: string, searchBy:string,page: number, setTotalpages:Function}) {
     const { isPending, isError, data, error } = useQuery({
-        queryKey:['games', query, searchBy],
+        queryKey:['games', query, searchBy, page],
         queryFn: async () => {
             const response = await fetch(
-                `http://localhost:5000/data?query=${encodeURIComponent(query)}&searchBy=${searchBy}&page=${page}&limit=${limit}`,
+                `http://localhost:5000/data?query=${encodeURIComponent(query)}&searchBy=${searchBy}&page=${page}&limit=${30}`,
             )
             
             return await response.json()
@@ -58,15 +74,19 @@ function Rank({ query, searchBy, page, limit} : {query:string, searchBy:string, 
     })
 
     if (isPending) {
-        return <div>加载中...</div>;
+        return <div className="border-2 border-black m-6 w-10/12 h-5/6 overflow-auto rounded-lg">
+            加载中...
+        </div>
     }
     
     if (isError) {
         return <div>加载错误: {error.message}</div>;
     }
 
+    setTotalpages(data.total_pages);
+
     return (
-        <div className="flex-grow border-2 border-black m-6 w-10/12 overflow-auto rounded-lg" >
+        <div className="border-2 border-black m-6 w-10/12 h-5/6 overflow-auto rounded-lg shadow-md" >
             <table className="w-full">
                 <thead>
                     <tr className="bg-gray-200 text-center">
@@ -81,8 +101,8 @@ function Rank({ query, searchBy, page, limit} : {query:string, searchBy:string, 
                     </tr>
                 </thead>
                 <tbody className="text-center">
-                {data.data.map(row => (
-                    <tr className="border border-black" key={row.id}>
+                {data.data.map((row)=> (
+                    <tr className="border-y border-black" key={row.id}>
                         <td>{row.id}</td>
                         
                         <td className="max-w-14">
@@ -117,16 +137,57 @@ function Rank({ query, searchBy, page, limit} : {query:string, searchBy:string, 
     )
 }
 
+function FbButton({handleforward, handlebackward, isBackwardDisabled, isForwardDisabled}
+    :{handleforward:() => void, handlebackward:() =>void, isBackwardDisabled:boolean, isForwardDisabled: boolean}){
+    
+    return(
+    <div className="flex justify-center gap-x-9 w-10/12">
+        <button className="border-2 border-black rounded-lg w-36 h-auto p-2" onClick={handlebackward} disabled={isBackwardDisabled}>
+            上一页
+        </button>
+        <button className="border-2 border-black rounded-lg w-36 h-auto p-2" onClick={handleforward} disabled={isForwardDisabled}>
+            下一页
+        </button>
+    </div>
+    )
+}
+
 export default function Home(){
     const [query, setQuery] = useState("");
     const [searchBy, setSearchBy] = useState("name");
+    const [page, setPage] = useState(1);
+    const [isForwardDisabled, setIsForwardDisabled] = useState(false);
+    const [isBackwardDisabled, setIsBackwardDisabled] = useState(true);
+    const [total_pages, setTotalpages] = useState(1);
+
+    const handleforward = () => {
+        setPage((prevPage) => {
+            const newPage = prevPage + 1;
+            setIsBackwardDisabled(false); // 前进后上一页按钮可以启用
+            if (newPage === total_pages) {
+                setIsForwardDisabled(true); // 达到最大页数时禁用下一页按钮
+            }
+            return newPage;
+        });
+    };
+
+    const handlebackward = () => {
+        setPage((prevPage) => {
+            const newPage = prevPage - 1;
+            setIsForwardDisabled(false); // 回退后下一页按钮可以启用
+            if (newPage === 1) {
+                setIsBackwardDisabled(true); // 到第一页时禁用上一页按钮
+            }
+            return newPage;
+        });
+    };
 
     return (
         <div className="flex flex-col h-screen items-center">
-        <TopNavi query={query} setQuery={setQuery} searchBy={searchBy} setSearchBy={setSearchBy}/>
-        <QueryClientProvider client={queryCLient}>
-        <Rank query={query} searchBy={searchBy} page={1} limit={200}></Rank>
-        </QueryClientProvider>
+            <TopNavi query={query} setQuery={setQuery} searchBy={searchBy} setSearchBy={setSearchBy}/>
+            <Rank page={page} query={query} searchBy={searchBy} setTotalpages={setTotalpages}></Rank>
+            <FbButton handlebackward={handlebackward} handleforward={handleforward}
+            isBackwardDisabled={isBackwardDisabled} isForwardDisabled={isForwardDisabled}></FbButton>
         </div>
     )
-}
+}   
